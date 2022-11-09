@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btnArea"
+                android:orientation="vertical">
+
+                <WebView
+                    android:id="@+id/webView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
+
+                <com.view.MTextView
+
+                    android:id="@+id/capacityTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/btnArea"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:fitsSystemWindows="true"
+
+                    android:foregroundTint="@color/bt_error_red"
+                    android:includeFontPadding="false"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_12"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btnArea"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1">
+
+                <include
+                    android:id="@+id/btn"
+                    layout="@layout/btn_type_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!--  <ru.noties.scrollable.ScrollableLayout
+              android:background="@color/white"
+              android:id="@+id/scrollable_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:overScrollMode="ifContentScrolls">
+
+
+          </ru.noties.scrollable.ScrollableLayout>-->
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/backArrowImgView"
+        android:layout_width="@dimen/_37sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_6sdp"
+        android:background="@drawable/circle_shadow_more"
+        android:padding="@dimen/_13sdp"
+        android:rotation="90"
+        android:tint="#605F5F"
+        app:srcCompat="@drawable/ic_close_button" />
+
+    <com.view.anim.loader.AVLoadingIndicatorView
+        android:id="@+id/loaderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:indicator="BallPulse"
+        app:indicator_color="@color/black" />
+</RelativeLayout>

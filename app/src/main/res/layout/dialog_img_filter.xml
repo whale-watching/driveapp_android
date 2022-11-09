@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/closeImg"
+                android:layout_centerInParent="true"
+                android:background="@drawable/top_curve_card"
+                android:paddingBottom="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:id="@+id/titleArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.view.MTextView
+                            android:id="@+id/TitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:gravity="start"
+                            android:includeFontPadding="false"
+                            android:text="Short By"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_17ssp"
+                            android:visibility="visible"
+                            app:customTypeFace="@string/systemSemiBold"
+                            app:textAllCaps="false" />
+
+                        <com.view.MTextView
+                            android:id="@+id/subTitleTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:gravity="start"
+                            android:includeFontPadding="false"
+                            android:text="Short By"
+                            android:textAlignment="viewStart"
+                            android:textColor="#545454"
+                            android:textSize="@dimen/_11ssp"
+                            android:visibility="gone"
+                            app:customTypeFace="@string/systemRegular"
+                            app:textAllCaps="false" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardshadow"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_2sdp"
+                            android:layout_below="@+id/subTitleTxt"
+                            android:visibility="gone"
+                            app:cardCornerRadius="0dp"
+                            app:cardElevation="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/mView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/titleArea"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="#efefef"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mView"
+                    android:layout_marginTop="@dimen/_minus2sdp"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_image_list_design" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mView"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/firstArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            app:cardElevation="0dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:id="@+id/detailsArea"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                </androidx.core.widget.NestedScrollView>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/closeImg"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/round_shape"
+                android:backgroundTint="@color/white"
+                android:gravity="end"
+                android:padding="@dimen/_10sdp"
+                android:tint="@color/gray"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_close_button" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

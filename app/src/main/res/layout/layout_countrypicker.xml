@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/closeImg"
+        android:background="@drawable/rectangle_setfingerprint_bottomsheet">
+
+        <com.view.MTextView
+            android:id="@+id/titleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_14"
+            android:visibility="visible"
+            app:customTypeFace="@string/robotobold" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchview_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/searchArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleTxt"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/search_shape"
+            android:backgroundTint="#10000000"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:srcCompat="@drawable/ic_search_black_24dp"
+                app:tint="@color/place_autocomplete_search_hint" />
+
+            <EditText
+                android:id="@+id/searchTxt"
+                layout="@layout/editbox_form_design"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@string/systemRegular"
+                android:hint="search"
+                android:inputType="textNoSuggestions"
+                android:padding="5dp"
+                android:paddingEnd="25dp"
+                android:singleLine="true"
+                android:textAlignment="viewStart" />
+
+            <ImageView
+                android:id="@+id/imageCancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@mipmap/ic_cancel_cab_request"
+                android:tint="@android:color/black"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.general.files.KmRecyclerView
+            android:id="@+id/recyclerview_countries"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchArea"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="?rowBackgroundColor"
+            android:visibility="visible" />
+
+        <com.view.anim.loader.AVLoadingIndicatorView
+            android:id="@+id/loaderView"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:indicator="LineSpinFadeLoader"
+            app:indicator_color="@color/gray" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/closeImg"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/round_shape"
+        android:backgroundTint="@color/white"
+        android:gravity="end"
+        android:padding="@dimen/_10sdp"
+        android:tint="@color/gray"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_close_button" />
+</RelativeLayout>

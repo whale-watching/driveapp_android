@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent"
+        android:minHeight="@dimen/_155sdp"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imagView"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/_155sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:scaleType="fitXY" />
+
+
+        <com.view.MTextView
+            android:id="@+id/TitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+
+            android:gravity="start"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_16ssp"
+            app:customTypeFace="@string/systemSemiBold" />
+
+        <com.view.MTextView
+            android:id="@+id/subTitleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+
+            android:gravity="start"
+            android:maxLines="4"
+            android:text=""
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:customTypeFace="@string/systemLightFont" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

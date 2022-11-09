@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ufx_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/design_toolbar_general" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_include">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <com.view.MTextView
+                    android:id="@+id/introTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f1f1f1"
+                    android:gravity="center|start"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:text="Select category below to add services you are going to provide"
+                    android:textAlignment="viewStart"
+                    android:textColor="#202020"
+                    android:textSize="@dimen/_11ssp"
+                    android:textStyle="bold"
+                    app:customTypeFace="@string/systemMediumFont" />
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/introTxt"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:background="@drawable/search_shape"
+                        android:backgroundTint="#f1f1f1"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_3sdp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:clickable="false"
+                            app:srcCompat="@drawable/ic_search_black_24dp" />
+
+                        <EditText
+                            android:id="@+id/searchTxtView"
+                            layout="@layout/editbox_form_design"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_shape"
+                            android:backgroundTint="#f1f1f1"
+                            android:includeFontPadding="false"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <FrameLayout
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp">
+
+                            <ImageView
+                                android:id="@+id/imageCancel"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:src="@mipmap/ic_cancel_cab_request"
+                                app:tint="@android:color/black" />
+
+                            <com.view.anim.loader.AVLoadingIndicatorView
+                                android:id="@+id/loaderView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:visibility="gone"
+                                app:indicator="BallPulse"
+                                app:indicator_color="@color/gray" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.view.MTextView
+                    android:id="@+id/noResTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_16"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <com.view.pinnedListView.PinnedSectionListView
+                android:id="@+id/category_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:divider="#f1f1f1"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:nestedScrollingEnabled="true" />
+
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <com.view.ErrorView
+        android:id="@+id/errorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

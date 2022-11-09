@@ -1,0 +1,231 @@
+{
+  "project_info": {
+    "project_number": "188567499468",
+    "firebase_url": "https://vsystem-solicity-firebase-default-rtdb.firebaseio.com",
+    "project_id": "vsystem-solicity-firebase",
+    "storage_bucket": "vsystem-solicity-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188567499468:android:2c62654735c4c6f10e4869",
+        "android_client_info": {
+          "package_name": "com.solicity.kiosk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188567499468-2csii67d2ome2ial90k9hcmub2gt22nu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.solicity.kiosk",
+            "certificate_hash": "834640623510eb4eefe5a76ef8f74456ce6ca9c3"
+          }
+        },
+        {
+          "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEKylN7QJXkpgT5jWN58ucp6gJNJl8e1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "188567499468-cageo3l2hi3lhpl8iqs73scv0osgr9pm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demo.kiosk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188567499468:android:d9bf6c84b5476fe90e4869",
+        "android_client_info": {
+          "package_name": "com.solicity.kioskstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188567499468-7964u0oahdtolh9ppqgvg41rmrrjqmbo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.solicity.kioskstore",
+            "certificate_hash": "834640623510eb4eefe5a76ef8f74456ce6ca9c3"
+          }
+        },
+        {
+          "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEKylN7QJXkpgT5jWN58ucp6gJNJl8e1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "188567499468-cageo3l2hi3lhpl8iqs73scv0osgr9pm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demo.kiosk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188567499468:android:883bd849384e2f900e4869",
+        "android_client_info": {
+          "package_name": "com.solicity.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188567499468-p3dmpeqmdcqir7dfh0ue7jmme5ld50i6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.solicity.provider",
+            "certificate_hash": "834640623510eb4eefe5a76ef8f74456ce6ca9c3"
+          }
+        },
+        {
+          "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEKylN7QJXkpgT5jWN58ucp6gJNJl8e1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "188567499468-cageo3l2hi3lhpl8iqs73scv0osgr9pm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demo.kiosk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188567499468:android:0c952a926eb066d30e4869",
+        "android_client_info": {
+          "package_name": "com.solicity.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188567499468-jks0sntvil97l4ngvfrghhch3le60ie4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.solicity.store",
+            "certificate_hash": "834640623510eb4eefe5a76ef8f74456ce6ca9c3"
+          }
+        },
+        {
+          "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEKylN7QJXkpgT5jWN58ucp6gJNJl8e1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "188567499468-cageo3l2hi3lhpl8iqs73scv0osgr9pm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demo.kiosk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188567499468:android:28a60df7697cd5e40e4869",
+        "android_client_info": {
+          "package_name": "com.solicity.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188567499468-usecjs0ovn167dlc5kb9uvh0dhekcrud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.solicity.user",
+            "certificate_hash": "834640623510eb4eefe5a76ef8f74456ce6ca9c3"
+          }
+        },
+        {
+          "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEKylN7QJXkpgT5jWN58ucp6gJNJl8e1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188567499468-1k82leoeo6q38kc85du3uk8pneia3cq8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "188567499468-cageo3l2hi3lhpl8iqs73scv0osgr9pm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.demo.kiosk"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

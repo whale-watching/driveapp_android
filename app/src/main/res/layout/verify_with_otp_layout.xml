@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000"
+    android:gravity="bottom"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <!-- -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="-10dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <com.view.MTextView
+                    android:id="@+id/titleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="start|center"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    app:customTypeFace="@string/systemSemiBold" />
+
+
+                <com.view.MTextView
+                    android:id="@+id/verifyOtpNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text=""
+                    android:textColor="#646464"
+                    android:textSize="@dimen/_12ssp" />
+
+                <LinearLayout
+                    android:id="@+id/OtpAddArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="top|center"
+                        android:visibility="gone">
+
+                        <com.view.editBox.MaterialEditText
+                            android:id="@+id/codeBox1"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/square_border"
+                            android:hint="o"
+                            android:imeOptions="actionNext"
+                            android:maxLength="1"
+                            android:text=""
+                            android:textAlignment="center"
+                            app:met_hideUnderline="true" />
+
+                        <com.view.editBox.MaterialEditText
+                            android:id="@+id/codeBox2"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/square_border"
+                            android:imeOptions="actionNext"
+                            android:maxLength="1"
+                            android:text=""
+                            android:textAlignment="center" />
+
+                        <com.view.editBox.MaterialEditText
+                            android:id="@+id/codeBox3"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/square_border"
+                            android:hint=""
+                            android:imeOptions="actionNext"
+                            android:maxLength="1"
+                            android:text=""
+                            android:textAlignment="center" />
+
+                        <com.view.editBox.MaterialEditText
+                            android:id="@+id/codeBox4"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/square_border"
+                            android:imeOptions="actionNext"
+                            android:maxLength="1"
+                            android:text=""
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <com.mukesh.OtpView
+                        android:id="@+id/otp_verify_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="62dp"
+                        android:layout_gravity="center"
+                        android:hint="."
+                        android:inputType="number"
+                        android:itemBackground="@drawable/bg_otp_item"
+                        android:textColor="@color/appThemeColor_1"
+                        app:itemCount="4"
+                        app:itemSpacing="10dp"
+                        app:lineColor="@color/otp_item_state"
+                        app:state_filled="true"
+                        app:viewType="rectangle" />
+
+                    <com.view.MTextView
+                        android:id="@+id/verifyOtpValidationNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text=""
+                        android:visibility="gone"
+                        android:textColor="@color/pickup_req_later_btn"
+                        android:textSize="@dimen/_9ssp" />
+
+
+                </LinearLayout>
+
+                <include
+                    android:inputType="number"
+                    android:id="@+id/otpBox"
+                    layout="@layout/editbox_form_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"                   android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"/>
+
+                <include
+                    android:id="@+id/btn_type2"
+                    layout="@layout/btn_type_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/all_btn_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp" />
+
+                <com.view.MTextView
+                    android:id="@+id/cancelTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="#415E72"
+                    android:textSize="15sp"
+                    app:customTypeFace="@string/systemSemiBold"  />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

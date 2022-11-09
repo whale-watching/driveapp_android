@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/instructioncbLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.view.MTextView
+                    android:id="@+id/institle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="PlaceName"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp"
+                    app:customTypeFace="@string/systemRegular" />
+                <com.view.MTextView
+                    android:id="@+id/inssubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="Address"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"
+                    app:customTypeFace="@string/systemLightFont" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/statusArea"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="end|center"
+            android:background="@drawable/login_border"
+            android:gravity="center|end"
+            android:orientation="horizontal">
+
+            <com.view.MTextView
+                android:text="Upload"
+                android:includeFontPadding="false"
+                android:id="@+id/statusVTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:gravity="center"
+                app:textAllCaps="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/appThemeColor_TXT_1"
+                android:textSize="@dimen/_8ssp"
+                app:customTypeFace="@string/systemMediumFont" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

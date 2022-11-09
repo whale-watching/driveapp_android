@@ -1,0 +1,42 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:pathData="M256,256m-256,0a256,256 0,1 1,512 0a256,256 0,1 1,-512 0"
+      android:fillColor="#ff90c2"/>
+  <path
+      android:pathData="m512,256c0,-22.027 -2.784,-43.404 -8.016,-63.8l-66.93,-66.93 -339.446,294.122 80.538,80.538c24.552,7.83 50.706,12.07 77.854,12.07 141.385,0 256,-114.615 256,-256z"
+      android:fillColor="#ff73af"/>
+  <path
+      android:pathData="m143.239,280.208 l-23.414,71.419 -9.786,55.334 55.334,-9.785 71.419,-23.415 -32.292,-61.261z"
+      android:fillColor="#fff"/>
+  <path
+      android:pathData="m236.788,373.762 l-71.411,23.413 -55.338,9.786 94.462,-94.462z"
+      android:fillColor="#ededed"/>
+  <path
+      android:pathData="m282.734,140.672l93.539,93.539l-139.478,139.478l-93.539,-93.539z"
+      android:fillColor="#ffe670"/>
+  <path
+      android:pathData="m189.966,326.981l139.477,-139.477l46.768,46.768l-139.477,139.477z"
+      android:fillColor="#ffd400"/>
+  <path
+      android:pathData="m165.373,397.176 l-45.548,-45.549 -22.217,67.765z"
+      android:fillColor="#4a5be5"/>
+  <path
+      android:pathData="m165.377,397.175 l-67.769,22.217 44.993,-44.993z"
+      android:fillColor="#283ee1"/>
+  <path
+      android:pathData="m398.434,212.119 l-93.553,-93.553 35.214,-35.214c15.199,-15.199 39.842,-15.199 55.041,0l38.512,38.512c15.199,15.199 15.199,39.842 0,55.041z"
+      android:fillColor="#00f8fe"/>
+  <path
+      android:pathData="m433.647,176.904 l-35.214,35.214 -46.775,-46.775 62.734,-62.734 19.254,19.255c15.203,15.201 15.203,39.837 0.001,55.04z"
+      android:fillColor="#00d9e0"/>
+  <path
+      android:pathData="m309.701,113.686l93.539,93.539l-31.363,31.363l-93.539,-93.539z"
+      android:fillColor="#fff"/>
+  <path
+      android:pathData="m325.073,191.892l31.363,-31.363l46.768,46.768l-31.363,31.363z"
+      android:fillColor="#ededed"/>
+</vector>

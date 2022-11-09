@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainArea"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/_10sdp"
+        android:id="@+id/codeArea"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/round_shape"
+        android:orientation="horizontal"
+
+        >
+
+
+
+        <com.view.MTextView
+            android:id="@+id/codeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:clickable="false"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="ENG"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/app_login_txt_color"
+            android:textSize="@dimen/_10ssp"
+            app:customTypeFace="@string/systemSemiBold" />
+
+
+
+    </LinearLayout>
+
+
+    <com.view.MTextView
+        android:id="@+id/rowTitleTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_weight="1"
+        android:gravity="center_vertical|start"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:text=""
+        android:textAlignment="viewStart"
+        android:textColor="#646464"
+        android:textSize="@dimen/_12ssp"
+        app:customTypeFace="@string/systemSemiBold" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imgCheck"
+        android:layout_width="@dimen/_22sdp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:padding="@dimen/_2sdp"
+        android:tint="@color/appThemeColor_1"
+        app:srcCompat="@drawable/ic_radio_button_unchecked_black_24dp" />
+    <com.view.anim.loader.AVLoadingIndicatorView
+
+        android:backgroundTint="@color/appThemeColor_1"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:id="@+id/progress"
+        android:layout_width="@dimen/_25sdp"
+        app:indicator="LineSpinFadeLoader"
+        app:indicator_color="@color/appThemeColor_1"
+        android:layout_height="@dimen/_25sdp"
+      />
+</LinearLayout>

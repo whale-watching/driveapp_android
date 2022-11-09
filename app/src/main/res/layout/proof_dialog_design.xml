@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_marginTop="@dimen/_10sdp"
+               android:layout_centerHorizontal="true"
+                android:id="@+id/itemImg"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_no_icon" />
+            <com.view.MTextView
+                android:layout_below="@+id/itemImg"
+                android:id="@+id/clickToLargeTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_12ssp"
+                app:customTypeFace="@string/systemMediumFont" />
+
+            <com.view.MTextView
+                android:layout_below="@+id/clickToLargeTxt"
+
+                android:id="@+id/noteTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="#95ffffff"
+                android:padding="@dimen/_2sdp"
+                android:text=""
+                android:textColor="#323232"
+                android:textSize="@dimen/_12ssp"
+               android:layout_margin="@dimen/_10sdp"
+                android:textAlignment="textStart"
+                app:customTypeFace="@string/systemMediumFont" />
+
+            <ImageView
+                android:id="@+id/cancelImg"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/_5sdp"
+                android:tint="@color/appThemeColor_1"
+                app:srcCompat="@mipmap/ic_cancel_cab_request" />
+
+
+
+            <LinearLayout
+                android:id="@+id/btnArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/noteTxt"
+                android:background="@color/appThemeColor_1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <include
+                        android:id="@+id/btn_discard"
+                        layout="@layout/btn_type_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_gravity="bottom"
+
+                        />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="@dimen/_1sdp"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <include
+                        android:id="@+id/btn_confirm"
+                        layout="@layout/btn_type_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/all_btn_height"
+                        android:layout_gravity="bottom"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/carouselContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_500sdp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c0000000" />
+
+        <com.view.carouselview.CarouselView
+            android:id="@+id/carouselView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            app:autoPlay="false"
+            app:fillColor="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+
+        <com.view.MTextView
+            android:id="@+id/closeCarouselTxtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:clickable="true"
+            android:padding="@dimen/_8sdp"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/txt_size_16"
+            app:customTypeFace="@string/robotomediumFont" />
+    </RelativeLayout>
+</RelativeLayout>
